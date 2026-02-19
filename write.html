@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>학습 기록 작성</title>
+  <link rel="stylesheet" href="css/write.css">
+</head>
+<body>
+
+    <section class="write-container">
+        <h1>✍️ 학습 기록 작성</h1>
+      
+        <form id="writeForm">
+          <label>제목</label>
+          <input type="text" id="title" required />
+      
+          <label>분류</label>
+          <input type="text" id="category" placeholder="예: JavaScript, 회계" />
+      
+          <label>내용</label>
+          <textarea id="content" rows="6" required></textarea>
+      
+          <label>이미지 첨부</label>
+          <input type="file" id="image" accept="image/*" />
+      
+          <button type="submit">기록 저장</button>
+          <div class="write-actions">
+            
+            <button type="button" id="backBtn" class="action-btn">
+              목록으로 돌아가기
+            </button>
+            
+          </div>
+          
+        </form>
+      </section>
+      
+      <script src="js/write.js"></script>
+      
+
+
+</body>
+</html>
+

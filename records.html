@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/records.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="nav-btn">홈</a>
+    <a href="records.html" class="nav-btn active">학습기록</a>
+  </div>
+  
+
+<section class="records-container">
+  <div class="page-header">
+    <h2>📘 학습 기록</h2>
+  </div>
+  
+  <div class="record-controls">
+
+    <select id="sort">
+      <option value="latest">최신순</option>
+      <option value="oldest">과거순</option>
+    </select>
+  
+    <div class="stats">
+      <div class="stat-box">
+        <span class="num" id="totalCount">0</span>
+        <p>총 기록</p>
+      </div>
+      <div class="stat-box">
+        <span class="num" id="monthCount">0</span>
+        <p>이번 달</p>
+      </div>
+     
+    </div>
+
+    <button id="writeBtn" type="button" class="write-btn">+ 기록 작성</button>
+
+  </div>
+  
+      <input
+  type="text"
+  id="searchInput"
+  placeholder="제목 또는 내용 검색..."
+  class="search-box"
+/>
+<div class="category-filter">
+  <button data-cat="all">전체</button>
+  <button data-cat="회계 / 세무">회계 / 세무</button>
+  <button data-cat="빅데이터 / AI">빅데이터 / AI</button>
+  <button data-cat="기타">기타</button>
+</div>
+
+      
+    </div>
+  </div>
+  <table class="record-table">
+    <thead>
+      <tr>
+        <th>날짜</th>
+        <th>제목</th>
+        <th>분류</th>
+        <th>내용</th>
+        <th>관리</th>
+      </tr>
+    </thead>
+    <tbody id="recordList"></tbody>
+  </table>
+
+ </section>
+
+
+<script src="js/records.js"></script>
+
+</body>
+</html>
+
